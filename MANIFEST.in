@@ -1,0 +1,4 @@
+include pyproject.toml
+include license.txt
+include README.md
+recursive-include erpnext_slovakia *.json *.html *.js *.css *.csv *.py

@@ -1,0 +1,405 @@
+{
+	"country_code": "sk",
+	"name": "Slovakia - Účtová osnova pre podnikateľov",
+	"tree": {
+		"Trieda 0 - Dlhodobý majetok": {
+			"root_type": "Asset",
+			"Dlhodobý nehmotný majetok": {
+				"account_number": "01",
+				"Zriaďovacie náklady": { "account_number": "011", "account_type": "Fixed Asset" },
+				"Nehmotné výsledky výskumu a vývoja": { "account_number": "012", "account_type": "Fixed Asset" },
+				"Softvér": { "account_number": "013", "account_type": "Fixed Asset" },
+				"Oceniteľné práva": { "account_number": "014", "account_type": "Fixed Asset" },
+				"Goodwill": { "account_number": "015", "account_type": "Fixed Asset" },
+				"Ostatný dlhodobý nehmotný majetok": { "account_number": "019", "account_type": "Fixed Asset" }
+			},
+			"Dlhodobý hmotný majetok odpisovaný": {
+				"account_number": "02",
+				"Stavby": { "account_number": "021", "account_type": "Fixed Asset" },
+				"Samostatné hnuteľné veci a súbory hnuteľných vecí": { "account_number": "022", "account_type": "Fixed Asset" },
+				"Pestovateľské celky trvalých porastov": { "account_number": "025", "account_type": "Fixed Asset" },
+				"Základné stádo a ťažné zvieratá": { "account_number": "026", "account_type": "Fixed Asset" },
+				"Ostatný dlhodobý hmotný majetok": { "account_number": "029", "account_type": "Fixed Asset" }
+			},
+			"Dlhodobý hmotný majetok neodpisovaný": {
+				"account_number": "03",
+				"Pozemky": { "account_number": "031", "account_type": "Fixed Asset" },
+				"Umelecké diela a zbierky": { "account_number": "032", "account_type": "Fixed Asset" }
+			},
+			"Obstaranie dlhodobého majetku": {
+				"account_number": "04",
+				"Obstaranie dlhodobého nehmotného majetku": { "account_number": "041", "account_type": "Capital Work in Progress" },
+				"Obstaranie dlhodobého hmotného majetku": { "account_number": "042", "account_type": "Capital Work in Progress" },
+				"Obstaranie dlhodobého finančného majetku": { "account_number": "043", "account_type": "Capital Work in Progress" }
+			},
+			"Poskytnuté preddavky na dlhodobý majetok": {
+				"account_number": "05",
+				"Poskytnuté preddavky na dlhodobý nehmotný majetok": { "account_number": "051" },
+				"Poskytnuté preddavky na dlhodobý hmotný majetok": { "account_number": "052" },
+				"Poskytnuté preddavky na dlhodobý finančný majetok": { "account_number": "053" }
+			},
+			"Dlhodobý finančný majetok": {
+				"account_number": "06",
+				"Podielové CP a podiely v dcérskej spoločnosti": { "account_number": "061", "account_type": "Fixed Asset" },
+				"Podielové CP a podiely s podstatným vplyvom": { "account_number": "062", "account_type": "Fixed Asset" },
+				"Realizovateľné cenné papiere a podiely": { "account_number": "063", "account_type": "Fixed Asset" },
+				"Dlhové cenné papiere držané do splatnosti": { "account_number": "065", "account_type": "Fixed Asset" },
+				"Pôžičky v rámci konsolidovaného celku": { "account_number": "066", "account_type": "Fixed Asset" },
+				"Ostatné pôžičky": { "account_number": "067", "account_type": "Fixed Asset" },
+				"Ostatný dlhodobý finančný majetok": { "account_number": "069", "account_type": "Fixed Asset" }
+			},
+			"Oprávky k dlhodobému nehmotnému majetku": {
+				"account_number": "07",
+				"Oprávky k zriaďovacím nákladom": { "account_number": "071", "account_type": "Accumulated Depreciation" },
+				"Oprávky k nehmotným výsledkom výskumu a vývoja": { "account_number": "072", "account_type": "Accumulated Depreciation" },
+				"Oprávky k softvéru": { "account_number": "073", "account_type": "Accumulated Depreciation" },
+				"Oprávky k oceniteľným právam": { "account_number": "074", "account_type": "Accumulated Depreciation" },
+				"Oprávky ku goodwillu": { "account_number": "075", "account_type": "Accumulated Depreciation" },
+				"Oprávky k ostatnému dlhodobému nehmotnému majetku": { "account_number": "079", "account_type": "Accumulated Depreciation" }
+			},
+			"Oprávky k dlhodobému hmotnému majetku": {
+				"account_number": "08",
+				"Oprávky k stavbám": { "account_number": "081", "account_type": "Accumulated Depreciation" },
+				"Oprávky k samostatným hnuteľným veciam": { "account_number": "082", "account_type": "Accumulated Depreciation" },
+				"Oprávky k pestovateľským celkom trvalých porastov": { "account_number": "085", "account_type": "Accumulated Depreciation" },
+				"Oprávky k základnému stádu a ťažným zvieratám": { "account_number": "086", "account_type": "Accumulated Depreciation" },
+				"Oprávky k ostatnému dlhodobému hmotnému majetku": { "account_number": "089", "account_type": "Accumulated Depreciation" }
+			},
+			"Opravné položky k dlhodobému majetku": {
+				"account_number": "09",
+				"Opravná položka k dlhodobému nehmotnému majetku": { "account_number": "091" },
+				"Opravná položka k dlhodobému hmotnému majetku": { "account_number": "092" },
+				"Opravná položka k dlhodobému finančnému majetku": { "account_number": "093" },
+				"Opravná položka k poskytnutým preddavkom na DM": { "account_number": "095" },
+				"Opravná položka k nadobudnutému majetku": { "account_number": "097" },
+				"Oprávky k opravnej položke k nadobudnutému majetku": { "account_number": "098", "account_type": "Accumulated Depreciation" }
+			}
+		},
+		"Trieda 1 - Zásoby": {
+			"root_type": "Asset",
+			"Materiál": {
+				"account_number": "11",
+				"Obstaranie materiálu": { "account_number": "111", "account_type": "Stock" },
+				"Materiál na sklade": { "account_number": "112", "account_type": "Stock" },
+				"Materiál na ceste": { "account_number": "119", "account_type": "Stock" }
+			},
+			"Zásoby vlastnej výroby": {
+				"account_number": "12",
+				"Nedokončená výroba": { "account_number": "121", "account_type": "Stock" },
+				"Polotovary vlastnej výroby": { "account_number": "122", "account_type": "Stock" },
+				"Výrobky": { "account_number": "123", "account_type": "Stock" },
+				"Zvieratá": { "account_number": "124", "account_type": "Stock" }
+			},
+			"Tovar": {
+				"account_number": "13",
+				"Obstaranie tovaru": { "account_number": "131", "account_type": "Stock" },
+				"Tovar na sklade a v predajniach": { "account_number": "132", "account_type": "Stock" },
+				"Tovar na ceste": { "account_number": "133", "account_type": "Stock" }
+			},
+			"Opravné položky k zásobám": {
+				"account_number": "19",
+				"Opravná položka k materiálu": { "account_number": "191" },
+				"Opravná položka k nedokončenej výrobe": { "account_number": "192" },
+				"Opravná položka k polotovarom vlastnej výroby": { "account_number": "193" },
+				"Opravná položka k výrobkom": { "account_number": "194" },
+				"Opravná položka k zvieratám": { "account_number": "195" },
+				"Opravná položka k tovaru": { "account_number": "196" }
+			}
+		},
+		"Trieda 2 - Finančné účty": {
+			"root_type": "Asset",
+			"Pokladnica a ceniny": {
+				"account_number": "21",
+				"Pokladnica": { "account_number": "211", "account_type": "Cash" },
+				"Ceniny": { "account_number": "213" }
+			},
+			"Bankové účty": {
+				"account_number": "22",
+				"Bankové účty": { "account_number": "221", "account_type": "Bank" }
+			},
+			"Krátkodobý finančný majetok": {
+				"account_number": "25",
+				"Majetkové cenné papiere na obchodovanie": { "account_number": "251" },
+				"Vlastné akcie a vlastné obchodné podiely": { "account_number": "252" },
+				"Dlhové cenné papiere na obchodovanie": { "account_number": "253" },
+				"Dlhové cenné papiere so splatnosťou do 1 roka": { "account_number": "256" },
+				"Ostatné realizovateľné cenné papiere": { "account_number": "257" },
+				"Obstaranie krátkodobého finančného majetku": { "account_number": "259" }
+			},
+			"Prevody medzi finančnými účtami": {
+				"account_number": "26",
+				"Peniaze na ceste": { "account_number": "261" }
+			},
+			"Opravné položky ku KFM": {
+				"account_number": "29",
+				"Opravná položka ku krátkodobému finančnému majetku": { "account_number": "291" }
+			}
+		},
+		"Pohľadávky a prechodné aktíva": {
+			"root_type": "Asset",
+			"Pohľadávky z obchodného styku": {
+				"account_number": "31",
+				"Odberatelia": { "account_number": "311", "account_type": "Receivable" },
+				"Pohľadávky za eskontované cenné papiere": { "account_number": "313" },
+				"Poskytnuté preddavky": { "account_number": "314" },
+				"Ostatné pohľadávky": { "account_number": "315" },
+				"Čistá hodnota zákazky": { "account_number": "316" }
+			},
+			"Pohľadávky voči zamestnancom": {
+				"Pohľadávky voči zamestnancom": { "account_number": "335" }
+			},
+			"Pohľadávky voči spoločníkom": {
+				"account_number": "35",
+				"Pohľadávky voči spoločníkom": { "account_number": "354" },
+				"Ostatné pohľadávky voči spoločníkom": { "account_number": "355" },
+				"Pohľadávky za upísané vlastné imanie": { "account_number": "353", "account_type": "Receivable" }
+			},
+			"Iné pohľadávky": {
+				"Iné pohľadávky": { "account_number": "378" }
+			},
+			"Prechodné účty aktív": {
+				"Náklady budúcich období": { "account_number": "381" },
+				"Komplexné náklady budúcich období": { "account_number": "382" },
+				"Príjmy budúcich období": { "account_number": "385" }
+			},
+			"Opravné položky k pohľadávkam": {
+				"account_number": "39",
+				"Opravná položka k pohľadávkam": { "account_number": "391" }
+			}
+		},
+		"Záväzky": {
+			"root_type": "Liability",
+			"Záväzky z obchodného styku": {
+				"account_number": "32",
+				"Dodávatelia": { "account_number": "321", "account_type": "Payable" },
+				"Zmenky na úhradu": { "account_number": "322" },
+				"Prijaté preddavky": { "account_number": "324" },
+				"Ostatné záväzky": { "account_number": "325" },
+				"Nevyfakturované dodávky": { "account_number": "326", "account_type": "Stock Received But Not Billed" }
+			},
+			"Záväzky voči zamestnancom": {
+				"account_number": "33",
+				"Zamestnanci": { "account_number": "331" },
+				"Ostatné záväzky voči zamestnancom": { "account_number": "333" },
+				"Zúčtovanie so Sociálnou poisťovňou a ZP": { "account_number": "336" }
+			},
+			"Daňové záväzky": {
+				"account_number": "34",
+				"Ostatné priame dane": { "account_number": "342" },
+				"Ostatné dane a poplatky": { "account_number": "345" },
+				"Dotácie zo štátneho rozpočtu": { "account_number": "346" },
+				"Ostatné dotácie": { "account_number": "347" },
+				"Daň z príjmov - pohľadávka": { "account_number": "341.1" },
+				"Daň z príjmov - záväzok": { "account_number": "341.2" },
+				"DPH na vstupe": { "account_number": "343.1", "account_type": "Tax" },
+				"DPH na výstupe": { "account_number": "343.2", "account_type": "Tax" },
+				"Zúčtovanie DPH": { "account_number": "343.9", "account_type": "Tax" }
+			},
+			"Záväzky voči spoločníkom": {
+				"account_number": "36",
+				"Záväzky ku spoločníkom pri rozdeľovaní zisku": { "account_number": "361" },
+				"Ostatné záväzky voči spoločníkom": { "account_number": "365" }
+			},
+			"Iné záväzky": {
+				"account_number": "37",
+				"Záväzky z kúpy podniku": { "account_number": "372" },
+				"Záväzky z nájmu": { "account_number": "374" },
+				"Iné záväzky": { "account_number": "379" },
+				"Pohľadávky a záväzky z pevných termínových operácií": { "account_number": "373" },
+				"Nakúpené opcie": { "account_number": "376" },
+				"Predané opcie": { "account_number": "377" }
+			},
+			"Prechodné účty pasív": {
+				"account_number": "38",
+				"Výdavky budúcich období": { "account_number": "383" },
+				"Výnosy budúcich období": { "account_number": "384" }
+			},
+			"Krátkodobé bankové úvery": {
+				"account_number": "23",
+				"Krátkodobé bankové úvery": { "account_number": "231" },
+				"Eskontné úvery": { "account_number": "232" }
+			},
+			"Iné krátkodobé finančné výpomoci": {
+				"account_number": "24",
+				"Emitované krátkodobé dlhopisy": { "account_number": "241" },
+				"Ostatné krátkodobé finančné výpomoci": { "account_number": "249" }
+			}
+		},
+		"Vlastné imanie": {
+			"root_type": "Equity",
+			"Základné imanie a kapitálové fondy": {
+				"account_number": "41",
+				"Základné imanie": { "account_number": "411", "account_type": "Equity" },
+				"Emisné ážio": { "account_number": "412", "account_type": "Equity" },
+				"Ostatné kapitálové fondy": { "account_number": "413", "account_type": "Equity" },
+				"Oceňovacie rozdiely z precenenia majetku a záväzkov": { "account_number": "414", "account_type": "Equity" },
+				"Oceňovacie rozdiely z kapitálových účastín": { "account_number": "415", "account_type": "Equity" },
+				"Oceňovacie rozdiely z precenenia pri splynutí": { "account_number": "416", "account_type": "Equity" }
+			},
+			"Fondy zo zisku": {
+				"account_number": "42",
+				"Zákonný rezervný fond": { "account_number": "421", "account_type": "Equity" },
+				"Nedeliteľný fond": { "account_number": "422", "account_type": "Equity" },
+				"Štatutárne a ostatné fondy": { "account_number": "423", "account_type": "Equity" },
+				"Nerozdelený zisk minulých rokov": { "account_number": "428", "account_type": "Equity" },
+				"Neuhradená strata minulých rokov": { "account_number": "429", "account_type": "Equity" }
+			},
+			"Výsledok hospodárenia": {
+				"account_number": "43",
+				"Výsledok hospodárenia v schvaľovaní": { "account_number": "431", "account_type": "Equity" }
+			},
+			"Individuálny podnikateľ": {
+				"account_number": "49",
+				"Účet individuálneho podnikateľa": { "account_number": "491", "account_type": "Equity" }
+			},
+			"Trieda 7 - Závierkové účty": {
+				"Začiatočný účet súvahový": { "account_number": "701", "account_type": "Temporary" },
+				"Konečný účet súvahový": { "account_number": "702", "account_type": "Temporary" }
+			}
+		},
+		"Dlhodobé záväzky a rezervy": {
+			"root_type": "Liability",
+			"Rezervy": {
+				"account_number": "45",
+				"Rezervy zákonné": { "account_number": "451" },
+				"Ostatné rezervy": { "account_number": "452" }
+			},
+			"Bankové úvery dlhodobé": {
+				"account_number": "46",
+				"Bankové úvery": { "account_number": "461" }
+			},
+			"Dlhodobé záväzky": {
+				"account_number": "47",
+				"Dlhodobé záväzky voči spoločníkom": { "account_number": "471" },
+				"Vydané dlhopisy": { "account_number": "473" },
+				"Záväzky z prenájmu": { "account_number": "474" },
+				"Dlhodobé prijaté preddavky": { "account_number": "475" },
+				"Dlhodobé zmenky na úhradu": { "account_number": "476" },
+				"Ostatné dlhodobé záväzky": { "account_number": "479" },
+				"Záväzky zo sociálneho fondu": { "account_number": "472" }
+			},
+			"Odložená daň": {
+				"account_number": "48",
+				"Odložený daňový záväzok a pohľadávka": { "account_number": "481" }
+			}
+		},
+		"Trieda 5 - Náklady": {
+			"root_type": "Expense",
+			"Spotrebované nákupy": {
+				"account_number": "50",
+				"Spotreba materiálu": { "account_number": "501", "account_type": "Expense Account" },
+				"Spotreba energie": { "account_number": "502", "account_type": "Expense Account" },
+				"Spotreba ostatných neskladovateľných dodávok": { "account_number": "503", "account_type": "Expense Account" },
+				"Predaný tovar": { "account_number": "504", "account_type": "Cost of Goods Sold" }
+			},
+			"Služby": {
+				"account_number": "51",
+				"Opravy a udržiavanie": { "account_number": "511", "account_type": "Expense Account" },
+				"Cestovné": { "account_number": "512", "account_type": "Expense Account" },
+				"Náklady na reprezentáciu": { "account_number": "513", "account_type": "Expense Account" },
+				"Ostatné služby": { "account_number": "518", "account_type": "Expense Account" }
+			},
+			"Osobné náklady": {
+				"account_number": "52",
+				"Mzdové náklady": { "account_number": "521", "account_type": "Expense Account" },
+				"Príjmy spoločníkov zo závislej činnosti": { "account_number": "522", "account_type": "Expense Account" },
+				"Odmeny členom orgánov spoločnosti": { "account_number": "523", "account_type": "Expense Account" },
+				"Zákonné sociálne poistenie": { "account_number": "524", "account_type": "Expense Account" },
+				"Ostatné sociálne poistenie": { "account_number": "525", "account_type": "Expense Account" },
+				"Zákonné sociálne náklady": { "account_number": "527", "account_type": "Expense Account" },
+				"Ostatné sociálne náklady": { "account_number": "528", "account_type": "Expense Account" }
+			},
+			"Dane a poplatky": {
+				"account_number": "53",
+				"Daň z motorových vozidiel": { "account_number": "531", "account_type": "Expense Account" },
+				"Daň z nehnuteľností": { "account_number": "532", "account_type": "Expense Account" },
+				"Ostatné dane a poplatky": { "account_number": "538", "account_type": "Expense Account" }
+			},
+			"Iné náklady na hospodársku činnosť": {
+				"account_number": "54",
+				"Zostatková cena predaného dlhodobého majetku": { "account_number": "541", "account_type": "Expense Account" },
+				"Predaný materiál": { "account_number": "542", "account_type": "Expense Account" },
+				"Dary": { "account_number": "543", "account_type": "Expense Account" },
+				"Zmluvné pokuty a úroky z omeškania": { "account_number": "544", "account_type": "Expense Account" },
+				"Ostatné pokuty a penále": { "account_number": "545", "account_type": "Expense Account" },
+				"Odpis pohľadávky": { "account_number": "546", "account_type": "Expense Account" },
+				"Ostatné náklady na hospodársku činnosť": { "account_number": "548", "account_type": "Expense Account" },
+				"Manká a škody": { "account_number": "549", "account_type": "Expense Account" }
+			},
+			"Odpisy a opravné položky": {
+				"account_number": "55",
+				"Odpisy dlhodobého nehmotného a hmotného majetku": { "account_number": "551", "account_type": "Depreciation" },
+				"Zostatková cena predaného DFM": { "account_number": "552", "account_type": "Expense Account" },
+				"Náklady na predané cenné papiere a podiely": { "account_number": "553", "account_type": "Expense Account" },
+				"Tvorba a zúčtovanie komplexných nákladov budúcich období": { "account_number": "555", "account_type": "Expense Account" },
+				"Tvorba a zúčtovanie opravných položiek": { "account_number": "558", "account_type": "Expense Account" }
+			},
+			"Finančné náklady": {
+				"account_number": "56",
+				"Predané cenné papiere": { "account_number": "561", "account_type": "Expense Account" },
+				"Úroky": { "account_number": "562", "account_type": "Expense Account" },
+				"Kurzové straty": { "account_number": "563", "account_type": "Expense Account" },
+				"Náklady na precenenie cenných papierov": { "account_number": "564", "account_type": "Expense Account" },
+				"Tvorba opravných položiek k finančnému majetku": { "account_number": "565", "account_type": "Expense Account" },
+				"Náklady na krátkodobý finančný majetok": { "account_number": "566", "account_type": "Expense Account" },
+				"Ostatné finančné náklady": { "account_number": "568", "account_type": "Expense Account" },
+				"Manká a škody na finančnom majetku": { "account_number": "569", "account_type": "Expense Account" }
+			},
+			"Daň z príjmov": {
+				"account_number": "59",
+				"Daň z príjmov z bežnej činnosti - splatná": { "account_number": "591", "account_type": "Expense Account" },
+				"Daň z príjmov z bežnej činnosti - odložená": { "account_number": "592", "account_type": "Expense Account" },
+				"Dodatočné odvody dane z príjmov": { "account_number": "595", "account_type": "Expense Account" }
+			}
+		},
+		"Trieda 6 - Výnosy": {
+			"root_type": "Income",
+			"Tržby": {
+				"account_number": "60",
+				"Tržby za výrobky": { "account_number": "601", "account_type": "Income Account" },
+				"Tržby z predaja služieb": { "account_number": "602", "account_type": "Income Account" },
+				"Tržby za tovar": { "account_number": "604", "account_type": "Income Account" }
+			},
+			"Zmeny stavu vnútroorganizačných zásob": {
+				"account_number": "61",
+				"Zmeny stavu nedokončenej výroby": { "account_number": "611", "account_type": "Income Account" },
+				"Zmeny stavu polotovarov vlastnej výroby": { "account_number": "612", "account_type": "Income Account" },
+				"Zmeny stavu výrobkov": { "account_number": "613", "account_type": "Income Account" },
+				"Zmeny stavu zvierat": { "account_number": "614", "account_type": "Income Account" }
+			},
+			"Aktivácia": {
+				"account_number": "62",
+				"Aktivácia materiálu a tovaru": { "account_number": "621", "account_type": "Income Account" },
+				"Aktivácia vnútroorganizačných služieb": { "account_number": "622", "account_type": "Income Account" },
+				"Aktivácia dlhodobého nehmotného majetku": { "account_number": "623", "account_type": "Income Account" },
+				"Aktivácia dlhodobého hmotného majetku": { "account_number": "624", "account_type": "Income Account" }
+			},
+			"Ostatné výnosy z hospodárskej činnosti": {
+				"account_number": "63",
+				"Tržby z predaja dlhodobého nehmotného a hmotného majetku": { "account_number": "631", "account_type": "Income Account" },
+				"Tržby z predaja materiálu": { "account_number": "632", "account_type": "Income Account" },
+				"Ostatné výnosy z hospodárskej činnosti": { "account_number": "638", "account_type": "Income Account" }
+			},
+			"Finančné výnosy": {
+				"account_number": "64",
+				"Tržby z predaja cenných papierov a podielov": { "account_number": "641", "account_type": "Income Account" },
+				"Výnosy z dlhodobého finančného majetku": { "account_number": "642", "account_type": "Income Account" },
+				"Prijaté dividendy": { "account_number": "643", "account_type": "Income Account" },
+				"Výnosy z krátkodobého finančného majetku": { "account_number": "644", "account_type": "Income Account" },
+				"Výnosy z precenenia cenných papierov": { "account_number": "646", "account_type": "Income Account" },
+				"Výnosy z derivátových operácií": { "account_number": "647", "account_type": "Income Account" },
+				"Ostatné výnosy z finančnej činnosti": { "account_number": "648", "account_type": "Income Account" }
+			},
+			"Úroky a kurzové zisky": {
+				"account_number": "66",
+				"Úroky": { "account_number": "662", "account_type": "Income Account" },
+				"Kurzové zisky": { "account_number": "663", "account_type": "Income Account" }
+			},
+			"Mimoriadne a iné výnosy": {
+				"account_number": "69",
+				"Prevod výnosov": { "account_number": "697", "account_type": "Income Account" },
+				"Prevod daní": { "account_number": "698", "account_type": "Income Account" }
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+[project]
+name = "erpnext_slovakia"
+version = "0.1.0"
+description = "Slovak legislation localization for ERPNext"
+requires-python = ">=3.14"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Code Way, s.r.o.", email = "info@codeway.sk" }]
+classifiers = [
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"Natural Language :: Slovak",
+	"Programming Language :: Python :: 3",
+]
+
+dependencies = []
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"

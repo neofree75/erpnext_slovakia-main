@@ -1,0 +1,9 @@
+{
+  "name": "erpnext_slovakia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "cd ../frappe && node esbuild --app erpnext_slovakia",
+    "dev": "cd ../frappe && node esbuild --app erpnext_slovakia --run-dev-server"
+  }
+}
