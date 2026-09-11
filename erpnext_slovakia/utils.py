@@ -3,7 +3,9 @@
 
 import frappe
 
-_SLOVAK_VAT_RATES = {0.0, 5.0, 10.0, 23.0}
+# sadzby platné od 1. 1. 2025 (zákon č. 222/2004 Z. z. o DPH);
+# 20 % a 10 % prestali platiť k 31. 12. 2024
+_SLOVAK_VAT_RATES = {0.0, 5.0, 19.0, 23.0}
 
 
 def update_itemised_tax_data(doc):

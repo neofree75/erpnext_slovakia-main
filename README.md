@@ -4,11 +4,23 @@ Frappe/ERPNext aplikácia pre slovenské legislatívne požiadavky.
 
 ## Čo aplikácia poskytuje
 
-- **Slovenská účtová osnova** – štruktúra účtov podľa slovenských účtovných predpisov (triedy 0–9)
-- **DPH sadzby** – validácia platných slovenských sadzieb DPH (0 %, 5 %, 10 %, 23 %) pri každej faktúre
+- **Slovenská účtová osnova** – účtová osnova pre podnikateľov účtujúcich v sústave
+  podvojného účtovníctva, triedy 0–6
+- **Predvolené účty spoločnosti** – pohľadávky 311, záväzky 321, pokladnica 211,
+  bankové účty 221, zásoby, kurzové rozdiely a ďalšie sa nastavia na konkrétne
+  syntetické účty namiesto toho, aby si ich ERPNext vybral podľa typu účtu
+- **Šablóny DPH** – predajné, nákupné aj položkové šablóny pre sadzby 23 %, 19 % a 5 %
+  platné od 1. 1. 2025; zastarané šablóny 20 % a 10 % z ERPNext core sa odstránia,
+  ak neboli použité v žiadnom doklade
+- **Kontrola sadzieb DPH** – upozornenie pri faktúre s inou ako platnou slovenskou sadzbou
+- **Súvaha Úč POD 1-01** – report so stĺpcami Brutto / Korekcia / Netto a porovnaním
+  s predchádzajúcim obdobím, podľa vzoru Opatrenia MF SR č. 23054/2002-92
+- **Odpisové skupiny** – Stavby, Samostatné hnuteľné veci, Softvér a Oceniteľné práva
+  s korektnými účtami oprávok a dobou odpisovania
 - **IČO a IČ DPH** – vlastné polia na Spoločnostiach, Zákazníkoch a Dodávateľoch
 - **Formát adresy** – šablóna adresy podľa slovenského štandardu
-- **Automatická aktivácia** – všetky polia a šablóny sa nastavia automaticky pri vytvorení spoločnosti so štátom „Slovakia"
+- **Automatická aktivácia** – polia, šablóny aj predvolené účty sa nastavia automaticky
+  pri vytvorení spoločnosti so štátom „Slovakia“
 
 ## Požiadavky
 
@@ -18,10 +30,11 @@ Frappe/ERPNext aplikácia pre slovenské legislatívne požiadavky.
 
 ## Inštalácia
 
-Aplikáciu nainštalujte štandardným spôsobom cez `bench`:
+Aplikáciu nainštalujte štandardným spôsobom cez `bench`. Prvý argument určuje názov
+adresára v `apps/` – musí byť `erpnext_slovakia`, inak sa aplikácia nenačíta:
 
 ```bash
-bench get-app https://github.com/neofree75/erpnext_slovakia
+bench get-app erpnext_slovakia https://github.com/neofree75/erpnext_slovakia-main
 bench --site <site> install-app erpnext_slovakia
 ```
 
@@ -34,17 +47,35 @@ bench --site <site> migrate
 ## Aktivácia pre spoločnosť
 
 1. Vytvorte novú Spoločnosť (Company) a ako krajinu nastavte **Slovakia**
-2. Aplikácia automaticky pridá polia IČO a IČ DPH na Spoločnosť, Zákazníkov a Dodávateľov
-3. Pri výbere účtovej osnovy zvoľte **Slovak – Slovenská účtovná osnova**
+2. Pri výbere účtovej osnovy zvoľte **Slovakia - Účtová osnova pre podnikateľov**
+3. Aplikácia automaticky pridá polia IČO a IČ DPH, nastaví predvolené účty,
+   vytvorí šablóny DPH a odpisové skupiny a namapuje účty na položky súvahy
+
+Pri spoločnosti, ktorá už existovala pred inštaláciou aplikácie, doplníte predvoľby ručne:
+
+```bash
+bench --site <site> execute erpnext_slovakia.setup.install.setup_slovak_defaults \
+  --kwargs "{'company': 'Názov spoločnosti'}"
+```
+
+Bez parametra `company` sa spracujú všetky spoločnosti so štátom Slovakia.
+
+## Súvaha
+
+Report nájdete pod názvom **Balance Sheet SK** (v slovenskom rozhraní
+*Súvaha Úč POD 1-01*). Mapovanie účtu na položku súvahy sa ukladá do poľa
+`sk_suvaha_riadok` na Účte a dá sa pri neštandardných analytických účtoch upraviť ručne.
 
 ## Vývoj
 
 Po klonovaní do adresára `apps/` bench-u:
 
 ```bash
-bench migrate          # nasadí účtovú osnovu a šablónu adresy
-bench restart          # načíta zmeny v kóde
+bench --site <site> migrate   # nasadí účtovú osnovu, polia IČO/IČ DPH a mapovanie súvahy
+bench restart                 # načíta zmeny v kóde
 ```
+
+Adresová šablóna sa vytvára len pri inštalácii (`after_install`), nie pri každej migrácii.
 
 ## Upozornenie
 
