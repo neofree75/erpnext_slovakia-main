@@ -9,11 +9,10 @@ dist/
 venv/
 
 # Node
-node_modules/
+node_modules
 
 # Frappe build output
 erpnext_slovakia/public/dist/
-erpnext_slovakia/public/node_modules/
 
 # OS
 .DS_Store
